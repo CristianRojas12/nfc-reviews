@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo a Google Maps...</title>
+    
+    <meta http-equiv="refresh" content="2;url=https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #34a853; /* Color verde Google */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #4285f4; /* Color azul Google */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader"></div>
+    <h2>Abriendo Google Maps...</h2>
+    <p>Si la aplicación no se abre automáticamente, tocá el botón de abajo.</p>
+    
+    <a href="https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ" class="btn">Dejar Reseña ⭐</a>
+
+    <script>
+        // Redirección inmediata por JavaScript
+        setTimeout(function() {
+            window.location.replace("https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ");
+        }, 500);
+    </script>
+
+</body>
+</html>
