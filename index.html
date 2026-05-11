@@ -3,71 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirigiendo a Google Maps...</title>
-    
-    <meta http-equiv="refresh" content="2;url=https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ">
-
+    <title>Calificar Local</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Toda la pantalla es un enlace clickeable */
+        .full-screen-btn {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa;
-            text-align: center;
-            padding: 20px;
-        }
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #34a853; /* Color verde Google */
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        h2 {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
             color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #666;
-            margin-bottom: 30px;
+            text-align: center;
+            -webkit-tap-highlight-color: transparent;
         }
         .btn {
-            background-color: #4285f4; /* Color azul Google */
+            background-color: #4285f4;
             color: white;
             padding: 15px 30px;
-            text-decoration: none;
             border-radius: 8px;
+            font-size: 20px;
             font-weight: bold;
-            font-size: 18px;
-            display: block;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-
-    <div class="loader"></div>
-    <h2>Abriendo Google Maps...</h2>
-    <p>Si la aplicación no se abre automáticamente, tocá el botón de abajo.</p>
-    
-    <a href="https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ" class="btn">Dejar Reseña ⭐</a>
-
-    <script>
-        // Redirección inmediata por JavaScript
-        setTimeout(function() {
-            window.location.replace("https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ");
-        }, 500);
-    </script>
-
+    <a href="https://search.google.com/local/writereview?placeid=ChIJR5lMgOnHvJURxaATJ-AHXuQ" class="full-screen-btn">
+        <h1 style="margin-bottom: 10px;">¡Gracias por visitarnos!</h1>
+        <p style="color: #666; font-size: 16px; margin-bottom: 20px;">Tu opinión nos ayuda a mejorar.</p>
+        <div class="btn">Dejar Reseña ⭐</div>
+    </a>
 </body>
 </html>
